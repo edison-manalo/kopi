@@ -26,6 +26,7 @@
           </div>
           <ul class="hide-on-med-and-down nav-list">
             <li><a href="https://telecall-cwd-b5-2023-edisonmanalo.netlify.app/" class="nav-link">Home</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#modal-contact" class="nav-link modal-trigger">Contact us</a></li>
           </ul>
@@ -42,8 +43,10 @@
       </div>
     </header>
 
+    <!-- Sidenav on medium devices and down -->
     <ul class="sidenav nav-list" id="mobile-nav">
       <li><a href="https://telecall-cwd-b5-2023-edisonmanalo.netlify.app/" class="nav-link">Home</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#modal-contact" class="nav-link modal-trigger">Contact us</a></li>
       <li><a href="#modal-signup" class="btn-flat white-text btn-signup modal-trigger">Sign up</a></li>
@@ -64,7 +67,7 @@
         </div>
       </section>
 
-      <section class="container menu-section">
+      <section id="menu" class="container scrollspy menu-section">
         <div class="col">
           <h2 class="center-align menu-section__heading">Today's Menu</h2>
           <p class="center-align menu-section__subheading">Come and experience the exquisite flavors and alluring aromas of coffee at our shop.</p>
@@ -122,11 +125,13 @@
           <ul class="nav-list footer-nav">
             <li><h5>Links</h5></li>
             <li><a href="https://telecall-cwd-b5-2023-edisonmanalo.netlify.app/" class="nav-link">Home</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#modal-contact" class="nav-link modal-trigger">Contact us</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-copyright">
         <div class="container footer-content__secondary">
           <div class="footer-content__social">
@@ -172,20 +177,20 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
-              <input id="first_name" type="text" />
-              <label for="first_name">First name</label>
+              <input id="first-name" type="text" />
+              <label for="first-name">First name</label>
             </div>
             <div class="input-field col s12">
-              <input id="last_name" type="text" />
-              <label for="last_name">Last name</label>
+              <input id="last-name" type="text" />
+              <label for="last-name">Last name</label>
             </div>
             <div class="input-field col s12">
               <input id="email" type="email" placeholder="johndoe@gmail.com" />
               <label for="email">Email</label>
             </div>
             <div class="input-field col s12">
-              <input id="email" type="tel" placeholder="+639123456789" />
-              <label for="email">Mobile number</label>
+              <input id="mobile-number" type="tel" placeholder="+639123456789" />
+              <label for="mobile-number">Mobile number</label>
             </div>
             <div class="input-field col s12">
               <input id="password" type="password" />
