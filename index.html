@@ -64,6 +64,39 @@
         </div>
       </section>
 
+      <section class="container menu-section">
+        <div class="col">
+          <h2 class="center-align menu-section__heading">Today's Menu</h2>
+          <p class="center-align menu-section__subheading">Come and experience the exquisite flavors and alluring aromas of coffee at our shop.</p>
+          <div class="row">
+            <div class="col m6 l4">
+              <div class="card z-depth-0">
+                <div class="card-image"><img src="menu-1.jpg" alt="menu-1" /></div>
+                <div class="card-content">
+                  <h3>Iced Coffee</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 l4">
+              <div class="card z-depth-0">
+                <div class="card-image"><img src="menu-2.jpg" alt="menu-2" /></div>
+                <div class="card-content">
+                  <h3>Espresso</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 l4">
+              <div class="card z-depth-0">
+                <div class="card-image"><img src="menu-3.jpg" alt="menu-3" /></div>
+                <div class="card-content">
+                  <h3>Cold Brew</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="about" class="container scrollspy about-section">
         <div class="about-section__content">
           <i class="fa-solid fa-mug-hot"></i>
@@ -75,11 +108,35 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <div class="footer-content__primary">Have a cup of coffee with us</div>
-        <div class="footer-content__social">
-          <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#!"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+        <div class="footer-content__primary">
+          <a href="https://telecall-cwd-b5-2023-edisonmanalo.netlify.app/" class="brand-logo c-brand-logo black-text">Kopi<span>.</span></a>
+          <div>Have a cup of coffee with us</div>
+        </div>
+        <div class="footer-content__nav">
+          <ul class="nav-list footer-nav">
+            <li><h5>Shop</h5></li>
+            <li><span>Bucal, Calamba Laguna</span></li>
+            <li><span>Mon - Fri (8:00am - 9:00pm)</span></li>
+            <li><span>Sat - Sun (9:00am - 10:00pm)</span></li>
+          </ul>
+          <ul class="nav-list footer-nav">
+            <li><h5>Links</h5></li>
+            <li><a href="https://telecall-cwd-b5-2023-edisonmanalo.netlify.app/" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#modal-contact" class="nav-link modal-trigger">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container footer-content__secondary">
+          <div class="footer-content__social">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="footer-copyright__content">
+            &copy; 2023 Kopi
+          </div>
         </div>
       </div>
     </footer>
@@ -150,6 +207,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        // Sidenav
         const sideNavElems = document.querySelectorAll(".sidenav");
         const sideNavInstances = M.Sidenav.init(sideNavElems, {
           /* Options */
@@ -158,6 +216,7 @@
         // Carousel
         const carouselElems = document.querySelectorAll('.carousel');
         const instances = M.Carousel.init(carouselElems, {
+          duration: 150,
           dist: 0,
           shift: 32,
           numVisible: 1,
